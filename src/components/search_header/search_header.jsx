@@ -1,7 +1,7 @@
 import styles from "./search_header.module.css";
-import React, { useRef } from "react";
+import React, { memo, useRef } from "react";
 
-const SearchHeader = ({ onSearch, onLogoClick }) => {
+const SearchHeader = memo(({ onSearch, onLogoClick }) => {
   const inputRef = useRef();
 
   const onSubmit = (event) => {
@@ -27,6 +27,6 @@ const SearchHeader = ({ onSearch, onLogoClick }) => {
       </button>
     </form>
   );
-};
+});
 
 export default SearchHeader;
