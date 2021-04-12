@@ -13,9 +13,15 @@ function App({ youtube }) {
   };
 
   const search = (query) => {
+    setSelectedVideo(null);
+
     youtube
       .search(query) //
       .then((videos) => setVideos(videos));
+  };
+
+  const home = () => {
+    setSelectedVideo(null);
   };
 
   useEffect(() => {
@@ -23,9 +29,10 @@ function App({ youtube }) {
       .mostPopular() //
       .then((videos) => setVideos(videos));
   }, []);
+
   return (
     <div className={styles.app}>
-      <SearchHeader onSearch={search} />
+      <SearchHeader onSearch={search} onLogoClick={home} />
       <section className={styles.content}>
         {selectedVideo && (
           <div className={styles.detail}>

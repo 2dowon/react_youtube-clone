@@ -11,6 +11,15 @@
   display: flex;
   align-items: center;
   margin-right: 1em;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.logo:focus {
+  outline: none;
+}
+.title {
+  color: white;
 }
 
 .input {

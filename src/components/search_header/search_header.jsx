@@ -1,7 +1,7 @@
 import styles from "./search_header.module.css";
 import React, { useRef } from "react";
 
-const SearchHeader = ({ onSearch }) => {
+const SearchHeader = ({ onSearch, onLogoClick }) => {
   const inputRef = useRef();
 
   const onSubmit = (event) => {
@@ -12,10 +12,10 @@ const SearchHeader = ({ onSearch }) => {
 
   return (
     <form className={styles.header} onSubmit={onSubmit}>
-      <div className={styles.logo}>
+      <button className={styles.logo} onClick={onLogoClick}>
         <img className={styles.img} src="/images/logo.png" alt="logo" />
         <h1 className={styles.title}>Youtube</h1>
-      </div>
+      </button>
       <input
         ref={inputRef}
         className={styles.input}
