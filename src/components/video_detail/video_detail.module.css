@@ -5,3 +5,9 @@
 .description {
   white-space: pre-wrap;
 }
+
+.title,
+.channelTitle,
+.description {
+  color: white;
+}

@@ -2,7 +2,7 @@
   display: flex;
   height: 4rem;
   padding: 0.8em 1em;
-  background: black;
+  background: #191919;
   color: white;
 }
 
@@ -11,22 +11,42 @@
   align-items: center;
   margin-right: 1em;
 }
+.img {
+  height: 2rem;
+}
+.title {
+  font-size: 1.5rem;
+  margin-left: 5px;
+}
 
 .input {
   flex-basis: 100%;
   font-size: 1.3rem;
   outline: 0;
+  color: lightgrey;
+  background-color: #131313;
+  border: 0.5px solid rgb(71, 71, 71);
+  padding-left: 20px;
+  z-index: 1;
 }
-.input:focus {
-  outline: none;
+input:focus,
+input:active {
+  box-shadow: none;
+  outline: 1px solid #1c62b9;
 }
 
 .btn {
-  background-color: darkgrey;
+  background-color: #323232;
   outline: 0;
+  border: none;
+}
+button:focus,
+button:active {
+  box-shadow: none;
+  outline: none;
 }
 
 .btnImg {
-  height: 100%;
+  height: 70%;
   padding: 0.5em 0.2em;
 }
