@@ -39,6 +39,7 @@ input:active {
   background-color: #323232;
   outline: 0;
   border: none;
+  cursor: pointer;
 }
 button:focus,
 button:active {
