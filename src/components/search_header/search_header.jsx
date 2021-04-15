@@ -13,7 +13,7 @@ const SearchHeader = memo(({ onSearch }) => {
   return (
     <form className={styles.header} onSubmit={onSubmit}>
       <div className={styles.logo}>
-        <img className={styles.img} src="/images/logo.png" alt="logo" />
+        <div className={styles.img}></div>
         <h1 className={styles.title}>Youtube</h1>
       </div>
       <input
@@ -23,7 +23,7 @@ const SearchHeader = memo(({ onSearch }) => {
         placeholder="Search..."
       />
       <button className={styles.btn}>
-        <img className={styles.btnImg} src="/images/search.png" alt="search" />
+        <div className={styles.btnImg}></div>
       </button>
     </form>
   );
